@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toggle Reader Mode</title>
+        <script src="popup.js"></script>
+        <style>
+            body {
+                width: 400px;
+                margin: 0 auto;
+                text-align: center;
+                /* 全ての要素を中央寄せにする */
+            }
+
+            /* ラベル要素を左寄せにする */
+            label {
+                text-align: left;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="toggle">Toggle Reader Mode</button>
+        <br>
+        <input type="checkbox" id="auto-reader-mode">
+        <label for="read-mode-checkbox">Enable automatic read mode for new tabs</label>
+        <br>
+        <input type="radio" id="non-readerList" name="mode" value="non-readerList">
+        <label for="non-readerList">Non-Reader List</label>
+        <br>
+        <input type="radio" id="readerList" name="mode" value="readerList">
+        <label for="readerList">Reader List</label>
+    </body>
+</html>
